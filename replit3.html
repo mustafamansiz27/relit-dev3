@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        table {
+            text-align: center;
+            margin-bottom: 10px;
+            
+        }
+        table tr:nth-child(odd) {
+            background-color: rgb(178, 176, 176);
+        }
+        table tr:nth-child(even){
+            background-color: rgb(216, 213, 213);
+        }
+         thead.head td, 
+         tfoot td{
+            background-color: rgb(79, 63, 63);
+            color: white;
+        }
+        
+        input[type="checkbox"]{
+            display:none;
+        } 
+        label {
+            background-color: rgb(194, 114, 114);
+            margin:  3px;
+            padding-top: 5px;
+            padding-bottom: 10px;
+            position: relative;
+            left: 150px;
+            border-radius:5px  ;
+        } 
+    
+        label:hover{
+            cursor: pointer;
+            background-color: rgb(181, 163, 163);
+            color: white;
+            font-weight: 200;
+        }
+         
+        
+         
+
+
+    </style>
+</head>
+<body>
+
+    <table border="solid">
+        <thead class="head">
+            <td>Ürün Kodu</td>
+            <td>Ürün adı</td>
+            <td>Miktar</td>
+            <td>Birim Fiyat</td>
+            <td>Ara Toplam</td>
+            <td> boş</td>
+        </thead>
+        <tr>
+            <td>145687</td>
+            <td>Notebook</td>
+            <td>1</td>
+            <td>5.400<i class="fa-solid fa-turkish-lira-sign"></i></td>
+            <td>5.400<i class="fa-solid fa-turkish-lira-sign"></i></td>
+            <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;<i class="fa-solid fa-trash-can"></i> </td>
+        </tr>
+        <tr>
+            <td>434567</td>
+            <td>Klavye</td>
+            <td>2</td>
+            <td>80<i class="fa-solid fa-turkish-lira-sign"></i></td>
+            <td>160<i class="fa-solid fa-turkish-lira-sign"></i></td>
+            <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+        </tr>
+        <tr>
+            <td>344567</td>
+            <td>Monitör</td>
+            <td>1</td>
+            <td>700<i class="fa-solid fa-turkish-lira-sign"></i></td>
+            <td>700<i class="fa-solid fa-turkish-lira-sign"></i></td>
+            <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+        </tr>
+        <tr>
+            <td>123456</td>
+            <td>Mouse</td>
+            <td>2</td>
+            <td>50<i class="fa-solid fa-turkish-lira-sign"></i></td>
+            <td>100<i class="fa-solid fa-turkish-lira-sign"></i></td>
+            <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+        </tr>
+        <tr>
+            <td>867643</td>
+            <td>Play Station</td>
+            <td>1</td>
+            <td>2.500<i class="fa-solid fa-turkish-lira-sign"></i></td>
+            <td>3000<i class="fa-solid fa-turkish-lira-sign"></i></td>
+            <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+        </tr>
+        <tr>
+            <td>745943</td>
+            <td>Usb Bellek</td>
+            <td>3</td>
+            <td>120<i class="fa-solid fa-turkish-lira-sign"></i></td>
+            <td>360<i class="fa-solid fa-turkish-lira-sign"></i></td>
+            <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+        </tr>
+        <tfoot>
+            <td colspan="4">toplam</td>
+            
+            <td>9.500<i class="fa-solid fa-turkish-lira-sign"></i></td>
+            <td>boş</td>
+        </tfoot>
+    </table>
+            
+
+    <input type="checkbox" id="checkbox">
+    <label class="shopping" for="checkbox"><i class="fa-solid fa-cart-shopping"></i> Alışverişe devam</label>
+
+    <input type="checkbox" id="check">
+    <label for="check"><i class="fa-solid fa-credit-card"></i> Ödemeye Geç</label>
+
+    
+
+
+
+
+
+    
+    
+</body>
+</html>
